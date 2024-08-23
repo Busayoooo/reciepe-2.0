@@ -7,41 +7,76 @@
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
     <title>Receipe2.0</title>
 </head>
+<style>
+    .btn{
+        border-radius: 10px;
+        margin-top: 13px;
+    }
+</style>
 <body>
     <header>
+        <!-- desktop navbar completed -->
         <nav class="navbar-fixed white">
-            <div class="container">
+            <div class="container ">
                 <div class="row">
-                    <div class="col s3 left">
-                        <img width="150px" src="img/logo.png" alt="Logo">
+                    <div class="col l3 s12">
+                        <img class="responsive-img push-s2" width="150px" src="img/logo.png" alt="Logo">
+                        <a href="#sidenav" class="sidenav-trigger orange-text text-darken-4"><i class="material-icons">menu</i></a>
                     </div>
-                    <div class="col s6">
+                    <div class="col s6 hide-on-med-and-down">
                         <ul>
                             <li>
-                                <a class="orange-text text-darken-4"  href="">Who we are</a>
+                                <a class="orange-text text-darken-4 scrollspy bold-text"  href="">Who we are</a>
                             </li>
                             <li>
-                                <a class="orange-text text-darken-4" href="">Find a Receipe</a>
+                                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Find a Receipe</a>
                             </li>
                             <li>
-                                <a class="orange-text text-darken-4" href="">Our Reviews</a>
+                                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Our Reviews</a>
                             </li>
                             <li>
-                                <a class="orange-text text-darken-4" href="">Contact Us</a>
+                                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Contact Us</a>
                             </li>
                         </ul>
                     </div>
-                    <div class="col s3 right center">
-                        <button class="orange darken-4 white-text">Login</button>
+                    <div class="col s3 right push-l1 hide-on-med-and-down">
+                        <button class="btn btn-block orange darken-4 white-text">Login</button>
                     </div>
                 </div>
             </div>
         </nav>
+        <!-- mobile nav completed -->
+        <ul class="sidenav" id="sidenav">
+            <li>
+                <a class="orange-text text-darken-4 scrollspy bold-text"  href="">Who we are</a>
+            </li>
+            <li>
+                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Find a Receipe</a>
+            </li>
+            <li>
+                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Our Reviews</a>
+            </li>
+            <li>
+                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Contact Us</a>
+            </li>
+            <li>
+                <a class="btn btn-block orange darken-4 white-text">Login</a>
+            </li>
+        </ul>
+
     </header>
+   
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
     <script>
         $(document).ready(function(){
+            $('.parallax').parallax();
+            $('.modal').modal();
+            $('.sidenav').sidenav();
+            $('.slider').slider({});
+            $('.materialboxed').materialbox();
+            $('.collapsible').collapsible();
+            $('.scrollspy').scrollSpy();
         });
     </script>
 </body>
