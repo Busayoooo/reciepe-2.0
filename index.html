@@ -8,9 +8,34 @@
     <title>Receipe2.0</title>
 </head>
 <style>
+    .bold-txt{
+        font-weight: bold;
+    }
+
     .btn{
         border-radius: 10px;
         margin-top: 13px;
+    }
+
+    .relative{
+        position: relative;
+    }
+
+    .video-txt{
+       position:absolute;
+       top: 20%;
+       left: 15%;
+    }
+
+    .txt{
+        font-weight: 520;
+        line-height: 30px;
+        font-size: 21px;
+        font-family:serif;
+    }
+
+    .dish-img{
+        margin-top: 50px;
     }
 </style>
 <body>
@@ -64,7 +89,33 @@
             </li>
         </ul>
 
+        <div class="relative">
+            <video width="100%" class="responsive-video" autoplay loop>
+                <source src="img/header-bg-vid.mp4" type="video/mp4">
+            </video>
+            <div class="container center video-txt white-text">
+                <h1>Every Dish Tells a <br> Story</h1>
+                <h4>Explore, cook and create with us</h4>
+                <button class="btn btn-large orange darken-4 white-text center">Get Started</button>
+            </div>
+        </div>
+        <br>
     </header>
+    
+    <main>
+        <div class="container row">
+            <div class="col l6">
+                <h2>Start your culinary journey <span class="orange-text text-darken-4">today.</span></h2>
+                <h6 class="txt">
+                    We offer you a gateway to an expertly curated selection of global receipes, ranging from traditional dishes to innovative creations, spanning various cusines and cooking techniques.
+                </h6>
+                <button class=" orange darken-4 white-text btn btn-large">Start Your Journey</button>
+            </div>
+            <div class="col l6">
+                <img class="responsive-img dish-img" src="img/spagetti.png" alt="">
+            </div>
+        </div>
+    </main>
    
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
