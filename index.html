@@ -8,6 +8,12 @@
     <title>Receipe2.0</title>
 </head>
 <style>
+    *{
+        font-family:serif;
+        font-optical-sizing: auto;
+        font-style: normal;
+    }
+
     .bold-txt{
         font-weight: bold;
     }
@@ -37,6 +43,45 @@
     .dish-img{
         margin-top: 50px;
     }
+    
+    .rounded-img{
+        border-radius: 5px;
+    }
+
+   a:hover{
+    font-weight: 800 !important;
+    transition: ease-in 2s;
+   }
+
+  p{
+    font-size: 16px !important;
+   }
+
+    .img-txt{
+        position: absolute;
+        font-size: 20px;
+        top: 0;
+        left: 0;
+        text-decoration: underline white;
+        font-weight: bold;
+        background-color: rgba(0, 0, 0, 0.6);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3%;
+        border-radius: 10px;
+        width: 94%;
+        height: 100%;
+        flex-direction: column;
+        opacity: 0;  
+        transition: 0.6s;
+    }
+
+    .img-txt:hover{
+        opacity: 1;
+    }
+   
+    
 </style>
 <body>
     <header>
@@ -115,7 +160,112 @@
                 <img class="responsive-img dish-img" src="img/spagetti.png" alt="">
             </div>
         </div>
+
+        <div class="container row">
+            <br>
+            <h2 class="center">Select a <span class="orange-text text-darken-4">category</span> </h2>
+            <div class="relative col l4">
+                <img src="img/cake-main.jpg" alt="Cake" class="responsive-img rounded-img">
+                <div class="img-txt">
+                <a class="white-text" href="">Cakes <i class="material-icons white-text">call_made</i></a></div>
+            </div>
+            <div class="relative col l4">
+                <img src="img/chicken-main.jpg" alt="Chicken" class="responsive-img rounded-img">
+                <div class="img-txt">
+                <a class="white-text " href="">Chicken <i class="material-icons white-text">call_made</i></a></div>
+            </div>
+            <div class="relative col l4">
+                <img src="img/soup-main.jpg" alt="Soup" class="responsive-img rounded-img">
+                <div class="img-txt">
+                <a class="white-text" href="">Soups <i class="material-icons white-text">call_made</i></a></div>
+            </div>
+        </div>
+        <div class="container row">
+            <br><br>
+            <div class="col l6">
+                <img src="img/chef.jpg" alt="Chef Image" class="responsive-img">
+            </div>
+            <div class="col l6">
+                <h2>Crafted by Culinary <span class="pink-text text-darken-2">Wizards</span></h2>
+                <h6 class="txt">Discover a world of flavourful options that promises mouthwatering results , meticulously curted and perfected by culinary experts, all at your fingertips.Easy as pie, isn't it?</h6> <br>
+            <button class="btn btn-large pink darken-2 white-text">Start Cooking</button>
+            </div>
+        </div>
+        <div class="black">
+            <br>
+            <h2 class="white-text center">See our <span class="orange-text text-darken-4">numbers</span> </h2>
+            <br>
+            <div class="container">
+                <div class="row center">
+                    <div class="col l4">
+                        <h2 class="white-text">27k+</h2>
+                        <p class="orange-text text-darken-4">active users each month</p>
+                    </div>
+                    <div class="col l4">
+                        <h2 class="white-text">800+</h2>
+                        <p class="orange-text text-darken-4">available receipes till date</p>
+                    </div>
+                    <div class="col l4">
+                        <h2 class="white-text">30+</h2>
+                        <p class="orange-text text-darken-4">chefs for consultation</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+        </div>
+
+        <div class="container">
+            <h2>Meet the <span class="orange-text text-darken-4">experts</span> </h2>
+            <h6 class="txt">Our team of seasoned chefs offer guidance and delectable receipes to elevate your kitchen creations to new heights.</h6>
+            <br>
+            <div class="row">
+                <div class="col l4">
+                    <img src="img/expert-1.jpg" alt="" class="responsive-img"> <br>
+                    <h6>Liam <span class="orange-text text-darken-4">Hamish</span> </h6>
+                </div>
+                <div class="col l4">
+                    <img src="img/expert-2.jpg" alt="" class="responsive-img"> <br>
+                    <h6>Alejandro <span class="orange-text text-darken-4">Mateo</span> </h6>
+                </div>
+                <div class="col l4">
+                    <img src="img/expert-3.jpg" alt="" class="responsive-img"> <br>
+                    <h6>Miranda <span class="orange-text text-darken-4">Tangrove</span> </h6>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="divider"></div> <!--<br> -->
+        </div>
+        <h2 class="center">Our Esteemed <span class="orange-text text-darken-4">Cliente</span> </h2> 
+        <div class="row">
+           <div class="col l2">
+            <img src="img/rest-1.avif" alt="Cliente Logo" class="responsive-img">
+           </div>
+           <div class="col l2">
+            <img src="img/rest-2.avif" alt="Cliente Logo" class="responsive-img">
+           </div>
+           <div class="col l2">
+            <img src="img/rest-3.avif" alt="Cliente Logo" class="responsive-img">
+           </div>
+           <div class="col l2">
+            <img src="img/rest-4.avif" alt="Cliente Logo" class="responsive-img">
+           </div>
+           <div class="col l2">
+            <img src="img/rest-5.avif" alt="Cliente Logo" class="responsive-img">
+           </div>
+           <div class="col l2">
+            <img src="img/rest-6.avif" alt="Cliente Logo" class="responsive-img">
+           </div> 
+        </div>
+        <div class="container">
+            <div class="divider"></div><br>
+        </div>
+        </div>
     </main>
+
+    <footer class="page-footer">
+        
+    </footer>
    
     <script src="js/jquery.js"></script>
     <script src="js/materialize.js"></script>
