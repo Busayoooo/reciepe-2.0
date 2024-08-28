@@ -57,6 +57,10 @@
     font-size: 16px !important;
    }
 
+   .links{
+    text-decoration: underline;
+   }
+
     .img-txt{
         position: absolute;
         font-size: 20px;
@@ -88,42 +92,51 @@
     .gradient{
         background: linear-gradient(to bottom, #ffffff, #e65100);
     }
+
+    .chef-txt{
+        font-size: 20px;
+        font-weight: 200;
+        margin-left: 20px;
+        margin-top: 25px;
+    }
     
 </style>
 <body>
     <header>
         <!-- desktop navbar completed -->
-        <nav class="navbar-fixed white">
-            <div class="container ">
-                <div class="row">
-                    <div class="col l3 s12">
-                        <img class="responsive-img push-s2" width="150px" src="img/logo.png" alt="Logo">
-                        <a href="#sidenav" class="sidenav-trigger orange-text text-darken-4"><i class="material-icons">menu</i></a>
-                    </div>
-                    <div class="col s6 hide-on-med-and-down">
-                        <ul>
-                            <li>
-                                <a class="orange-text text-darken-4 scrollspy bold-text"  href="">Who we are</a>
-                            </li>
-                            <li>
-                                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Find a Receipe</a>
-                            </li>
-                            <li>
-                                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Our Reviews</a>
-                            </li>
-                            <li>
-                                <a class="orange-text text-darken-4 scrollspy bold-text" href="">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col s3 right push-l1 hide-on-med-and-down">
-                        <button class="btn btn-block orange darken-4 white-text">Login</button>
+        <div class="navbar-fixed">
+            <nav class="navbar-fixed white z-depth-0">
+                <div class="container navbar-fixed">
+                    <div class="row">
+                        <div class="col l3 s12">
+                            <img class="responsive-img push-s2" width="150px" src="img/logo.png" alt="Logo">
+                            <a href="#sidenav" class="sidenav-trigger orange-text text-darken-4"><i class="material-icons">menu</i></a>
+                        </div>
+                        <div class="col s6 hide-on-med-and-down">
+                            <ul>
+                                <li>
+                                    <a class="orange-text text-darken-4 scrollspy bold-text"  href="">Who we are</a>
+                                </li>
+                                <li>
+                                    <a class="orange-text text-darken-4 scrollspy bold-text" href="">Find a Receipe</a>
+                                </li>
+                                <li>
+                                    <a class="orange-text text-darken-4 scrollspy bold-text" href="">Our Reviews</a>
+                                </li>
+                                <li>
+                                    <a class="orange-text text-darken-4 scrollspy bold-text" href="">Contact Us</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col s3 right push-l1 hide-on-med-and-down">
+                            <button class="btn btn-block orange darken-4 white-text">Login</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+       </div>
         <!-- mobile nav completed -->
-        <ul class="sidenav" id="sidenav">
+        <ul class="sidenav navbar-fixed" id="sidenav">
             <li>
                 <a class="orange-text text-darken-4 scrollspy bold-text"  href="">Who we are</a>
             </li>
@@ -141,8 +154,8 @@
             </li>
         </ul>
 
-        <div class="relative">
-            <video width="100%" class="responsive-video" autoplay loop>
+        <div class="relative hide-on-med-and-down">
+            <video width="100%" class="responsive-video " autoplay loop>
                 <source src="img/header-bg-vid.mp4" type="video/mp4">
             </video>
             <div class="container center video-txt white-text">
@@ -152,23 +165,31 @@
             </div>
         </div>
         <br>
+        <div class="relative hide-on-large-only">
+            <img src="img/welcome-banner.jpg" alt="Dish Picture" class="responsive-img">
+            <div class="container video-txt white-text">
+                <h3>Every Dish Tells a Story.</h3>
+                <h6>Explore, cook and create with us.</h6>
+                <button class="btn orange darken-4 white-text ">Get Started</button>
+            </div>
+        </div>
     </header>
     
     <main>
         <div class="container row">
-            <div class="col l6">
+            <div class="col l6 s12">
                 <h2>Start your culinary journey <span class="orange-text text-darken-4">today.</span></h2>
                 <h6 class="txt">
                     We offer you a gateway to an expertly curated selection of global receipes, ranging from traditional dishes to innovative creations, spanning various cusines and cooking techniques.
                 </h6>
                 <button class=" orange darken-4 white-text btn btn-large">Start Your Journey</button>
             </div>
-            <div class="col l6">
+            <div class="col l6 hide-on-med-and-down">
                 <img class="responsive-img dish-img" src="img/spagetti.png" alt="">
             </div>
         </div>
 
-        <div class="container row">
+        <div class="container hide-on-med-and-down row">
             <br>
             <h2 class="center">Select a <span class="orange-text text-darken-4">category</span> </h2>
             <div class="relative col l4">
@@ -187,12 +208,44 @@
                 <a class="white-text" href="">Soups <i class="material-icons white-text">call_made</i></a></div>
             </div>
         </div>
+
+        <div class="hide-on-large-only">
+            <br>
+            <h2 class="center">Tap on a <span class="orange-text text-darken-4">category</span> </h2>
+                    <!-- Slider -->
+            <div class="slider ">
+                <ul class="slides">
+                    <li>
+                        <img src="img/soup-main.jpg" alt="Soup slider image" class="responsive-img">
+                        <div class="caption left-align links">
+                            <h3>Soup<i class="material-icons white-text">call_made</i></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/cake-main.jpg" alt="Cake slider image" class="responsive-img">
+                        <div class="caption center-align links">
+                            <h3>Cake<i class="material-icons white-text">call_made</i></h3>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/chicken-main.jpg" alt="Chicken slider image" class="responsive-img">
+                        <div class="caption right-align links">
+                            <h3>Chicken<i class="material-icons white-text">call_made</i></h3>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
         <div class="container row">
             <br><br>
-            <div class="col l6">
+            <div class="col l6 hide-on-med-and-down">
                 <img src="img/chef.jpg" alt="Chef Image" class="responsive-img">
             </div>
-            <div class="col l6">
+            <div class="col s12 hide-on-large-only">
+                <img src="img/chef-thumbs-up.jpg" alt="Chef Img" class="responsive-img">
+            </div>
+            <div class="col l6 s12">
                 <h2>Crafted by Culinary <span class="pink-text text-darken-2">Wizards</span></h2>
                 <h6 class="txt">Discover a world of flavourful options that promises mouthwatering results , meticulously curted and perfected by culinary experts, all at your fingertips.Easy as pie, isn't it?</h6> <br>
             <button class="btn btn-large pink darken-2 white-text">Start Cooking</button>
@@ -204,15 +257,15 @@
             <br>
             <div class="container">
                 <div class="row center">
-                    <div class="col l4">
+                    <div class="col l4 s12">
                         <h2 class="white-text">27k+</h2>
                         <p class="orange-text text-darken-4">active users each month</p>
                     </div>
-                    <div class="col l4">
+                    <div class="col l4 s12">
                         <h2 class="white-text">800+</h2>
                         <p class="orange-text text-darken-4">available receipes till date</p>
                     </div>
-                    <div class="col l4">
+                    <div class="col l4 s12">
                         <h2 class="white-text">30+</h2>
                         <p class="orange-text text-darken-4">chefs for consultation</p>
                     </div>
@@ -222,21 +275,23 @@
         </div>
 
         <div class="container">
-            <h2>Meet the <span class="orange-text text-darken-4">experts</span> </h2>
+            <h2 class="hide-on-med-and-down">Meet the <span class="orange-text text-darken-4">experts</span> </h2>
+            <h2 class="center hide-on-large-only">Meet the <span class="orange-text text-darken-4">experts</span> </h2>
             <h6 class="txt">Our team of seasoned chefs offer guidance and delectable receipes to elevate your kitchen creations to new heights.</h6>
             <br>
             <div class="row">
                 <div class="col l4">
-                    <img src="img/expert-1.jpg" alt="" class="responsive-img"> <br>
-                    <h6>Liam <span class="orange-text text-darken-4">Hamish</span> </h6>
+                    <img src="img/expert-1.jpg" alt="" class="responsive-img">
+                    
+                    <h6 class="chef-txt">Liam <span class="orange-text text-darken-4">Hamish</span> </h6> <br> <br> 
+                </div> 
+                <div class="col l4">
+                    <img src="img/expert-2.jpg" alt="" class="responsive-img">
+                    <h6 class="chef-txt">Alejandro <span class="orange-text text-darken-4">Mateo</span> </h6> <br> <br>
                 </div>
                 <div class="col l4">
-                    <img src="img/expert-2.jpg" alt="" class="responsive-img"> <br>
-                    <h6>Alejandro <span class="orange-text text-darken-4">Mateo</span> </h6>
-                </div>
-                <div class="col l4">
-                    <img src="img/expert-3.jpg" alt="" class="responsive-img"> <br>
-                    <h6>Miranda <span class="orange-text text-darken-4">Tangrove</span> </h6>
+                    <img src="img/expert-3.jpg" alt="" class="responsive-img"> 
+                    <h6 class="chef-txt">Miranda <span class="orange-text text-darken-4">Tangrove</span> </h6><br> <br> <br>
                 </div>
             </div>
         </div>
@@ -245,22 +300,22 @@
         </div>
         <h2 class="center">Our Esteemed <span class="orange-text text-darken-4">Cliente</span> </h2> 
         <div class="row">
-           <div class="col l2">
+           <div class="col l2 s6">
             <img src="img/rest-1.avif" alt="Cliente Logo" class="responsive-img">
            </div>
-           <div class="col l2">
+           <div class="col l2 s6">
             <img src="img/rest-2.avif" alt="Cliente Logo" class="responsive-img">
            </div>
-           <div class="col l2">
+           <div class="col l2 s6">
             <img src="img/rest-3.avif" alt="Cliente Logo" class="responsive-img">
            </div>
-           <div class="col l2">
+           <div class="col l2 s6">
             <img src="img/rest-4.avif" alt="Cliente Logo" class="responsive-img">
            </div>
-           <div class="col l2">
+           <div class="col l2 s6">
             <img src="img/rest-5.avif" alt="Cliente Logo" class="responsive-img">
            </div>
-           <div class="col l2">
+           <div class="col l2 s6">
             <img src="img/rest-6.avif" alt="Cliente Logo" class="responsive-img">
            </div> 
         </div>
@@ -271,7 +326,7 @@
     </main>
 
     <footer class="page-footer gradient">
-        <div class="container row">
+        <div class="container row hide-on-med-and-down">
             <div class="col l3">
                 <h6 class="orange-text text-darken-4">About</h6>
                 <ul>
@@ -329,8 +384,71 @@
                 </ul>
             </div>
         </div>
-        <div class="footer-copyright">
+        <div class="footer-copyright hide-on-med-and-down">
             <p class=" white-text"> © 2024. Recipe.com. All right reserved.</p> 
+        </div> 
+
+        <!-- mobile footer -->
+        <div class="container row hide-on-large-only">
+            <div class="col l3 s12">
+                <h6 class="orange-text text-darken-4">About</h6>
+                <ul>
+                    <li>
+                        <a class="black-text" href="">Who we are</a>
+                    </li>
+                    <li>
+                        <a class="black-text" href="">Meet the chefs</a>
+                    </li>
+                    <li>
+                        <a class="black-text" href="">FAQs</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h6 class="orange-text text-darken-4">Explore</h6>
+                <ul>
+                    <li>
+                        <a class="black-text" href="">Receipes</a>
+                    </li>
+                    <li>
+                        <a class="black-text" href="">Cakes</a>
+                    </li>
+                    <li>
+                        <a class="black-text" href="">Chicken</a>
+                    </li>
+                    <li>
+                        <a class="black-text" href="">Soups</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h6 class="orange-text text-darken-4">Legal</h6>
+                <ul>
+                    <li>
+                        <a class="black-text" href="">Privacy Policy</a>
+                    </li>
+                    <li>
+                        <a class="black-text" href="">Terms and conditions</a>
+                    </li>
+                    <li>
+                        <a class="black-text" href="">Disclosure</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col l3 s12">
+                <h6 class="orange-text text-darken-4">Contact Us</h6>
+                <ul>
+                    <li>
+                        <a class="black-text" href="">+2349024364876</a>
+                    </li>
+                    <li>
+                        <a class="black-text" href="">customersupport@receipe.com</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-copyright hide-on-large-only center">
+            <h5 class=" white-text"> © 2024. Recipe.com. All rights <br> reserved.</h5> 
         </div> 
     </footer>
    
