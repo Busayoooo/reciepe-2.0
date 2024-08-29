@@ -4,12 +4,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/materialize.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="img/rcon.png" type="image/x-icon">
     <title>Receipe2.0</title>
 </head>
 <style>
     *{
-        font-family:serif;
+        font-family: "Josefin Sans", sans-serif;
         font-optical-sizing: auto;
         font-style: normal;
     }
@@ -29,15 +32,8 @@
 
     .video-txt{
        position:absolute;
-       top: 20%;
+       top: 30%;
        left: 15%;
-    }
-
-    .txt{
-        font-weight: 520;
-        line-height: 30px;
-        font-size: 21px;
-        font-family:serif;
     }
 
     .dish-img{
@@ -54,7 +50,7 @@
    }
 
   p{
-    font-size: 16px !important;
+    font-size: 20px !important;
    }
 
    .links{
@@ -92,13 +88,6 @@
     .gradient{
         background: linear-gradient(to bottom, #ffffff, #e65100);
     }
-
-    .chef-txt{
-        font-size: 20px;
-        font-weight: 200;
-        margin-left: 20px;
-        margin-top: 25px;
-    }
     
 </style>
 <body>
@@ -108,11 +97,11 @@
             <nav class="navbar-fixed white z-depth-0">
                 <div class="container navbar-fixed">
                     <div class="row">
-                        <div class="col l3 s12">
-                            <img class="responsive-img push-s2" width="150px" src="img/logo.png" alt="Logo">
+                        <div class="col l3 s12 center-on-small-only">
+                            <img class="responsive-img " width="140px" src="img/logo.png" alt="Logo">
                             <a href="#sidenav" class="sidenav-trigger orange-text text-darken-4"><i class="material-icons">menu</i></a>
                         </div>
-                        <div class="col s6 hide-on-med-and-down">
+                        <div class="col l7  hide-on-med-and-down">
                             <ul>
                                 <li>
                                     <a class="orange-text text-darken-4 scrollspy bold-text"  href="">Who we are</a>
@@ -128,7 +117,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col s3 right push-l1 hide-on-med-and-down">
+                        <div class="col s2 right push-l1 hide-on-med-and-down">
                             <button class="btn btn-block orange darken-4 white-text">Login</button>
                         </div>
                     </div>
@@ -136,6 +125,7 @@
             </nav>
        </div>
         <!-- mobile nav completed -->
+       
         <ul class="sidenav navbar-fixed" id="sidenav">
             <li>
                 <a class="orange-text text-darken-4 scrollspy bold-text"  href="">Who we are</a>
@@ -168,7 +158,7 @@
         <div class="relative hide-on-large-only">
             <img src="img/welcome-banner.jpg" alt="Dish Picture" class="responsive-img">
             <div class="container video-txt white-text">
-                <h3>Every Dish Tells a Story.</h3>
+                <h4>Every Dish Tells a Story.</h4>
                 <h6>Explore, cook and create with us.</h6>
                 <button class="btn orange darken-4 white-text ">Get Started</button>
             </div>
@@ -178,10 +168,11 @@
     <main>
         <div class="container row">
             <div class="col l6 s12">
-                <h2>Start your culinary journey <span class="orange-text text-darken-4">today.</span></h2>
-                <h6 class="txt">
+                <h2 class="hide-on-med-and-down">Start your culinary journey <span class="orange-text text-darken-4">today.</span></h2>
+                <h3 class="hide-on-large-only">Start your culinary journey <span class="orange-text text-darken-4">today.</span></h3>
+                <p class="flow-text">
                     We offer you a gateway to an expertly curated selection of global receipes, ranging from traditional dishes to innovative creations, spanning various cusines and cooking techniques.
-                </h6>
+                </p>
                 <button class=" orange darken-4 white-text btn btn-large">Start Your Journey</button>
             </div>
             <div class="col l6 hide-on-med-and-down">
@@ -211,7 +202,7 @@
 
         <div class="hide-on-large-only">
             <br>
-            <h2 class="center">Tap on a <span class="orange-text text-darken-4">category</span> </h2>
+            <h3 class="center">Tap on a <span class="orange-text text-darken-4">category</span> </h3> <br>
                     <!-- Slider -->
             <div class="slider ">
                 <ul class="slides">
@@ -246,8 +237,9 @@
                 <img src="img/chef-thumbs-up.jpg" alt="Chef Img" class="responsive-img">
             </div>
             <div class="col l6 s12">
-                <h2>Crafted by Culinary <span class="pink-text text-darken-2">Wizards</span></h2>
-                <h6 class="txt">Discover a world of flavourful options that promises mouthwatering results , meticulously curted and perfected by culinary experts, all at your fingertips.Easy as pie, isn't it?</h6> <br>
+                <h4 class="hide-on-large-only center">Crafted by Culinary <span class="pink-text text-darken-2">Wizards</span></h4>
+                <h3 class="hide-on-med-and-down">Crafted by Culinary <br> <span class="pink-text text-darken-2">Wizards</span></h3>
+                <p>Discover a world of flavourful options that promises mouthwatering results , meticulously curted and perfected by culinary experts, all at your fingertips.Easy as pie, isn't it?</p> <br>
             <button class="btn btn-large pink darken-2 white-text">Start Cooking</button>
             </div>
         </div>
@@ -274,24 +266,24 @@
             <br>
         </div>
 
-        <div class="container">
+        <div class="container"><br>
+
             <h2 class="hide-on-med-and-down">Meet the <span class="orange-text text-darken-4">experts</span> </h2>
             <h2 class="center hide-on-large-only">Meet the <span class="orange-text text-darken-4">experts</span> </h2>
-            <h6 class="txt">Our team of seasoned chefs offer guidance and delectable receipes to elevate your kitchen creations to new heights.</h6>
+            <p>Our team of seasoned chefs offer guidance and delectable receipes to elevate your kitchen creations to new heights.</p>
             <br>
             <div class="row">
                 <div class="col l4">
                     <img src="img/expert-1.jpg" alt="" class="responsive-img">
-                    
-                    <h6 class="chef-txt">Liam <span class="orange-text text-darken-4">Hamish</span> </h6> <br> <br> 
+                    <p class="">Liam <span class="orange-text text-darken-4">Hamish</span> </p> <br> <br> 
                 </div> 
                 <div class="col l4">
                     <img src="img/expert-2.jpg" alt="" class="responsive-img">
-                    <h6 class="chef-txt">Alejandro <span class="orange-text text-darken-4">Mateo</span> </h6> <br> <br>
+                    <p class="">Alejandro <span class="orange-text text-darken-4">Mateo</span> </p> <br> <br>
                 </div>
                 <div class="col l4">
                     <img src="img/expert-3.jpg" alt="" class="responsive-img"> 
-                    <h6 class="chef-txt">Miranda <span class="orange-text text-darken-4">Tangrove</span> </h6><br> <br> <br>
+                    <p class="">Miranda <span class="orange-text text-darken-4">Tangrove</span> </p><br> <br> <br>
                 </div>
             </div>
         </div>
